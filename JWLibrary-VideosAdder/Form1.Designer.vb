@@ -27,7 +27,7 @@ Partial Class Form1
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.ButtonSelect = New System.Windows.Forms.Button()
         Me.ButtonDelete = New System.Windows.Forms.Button()
-        Me.ListBoxImg = New System.Windows.Forms.ListBox()
+        Me.ListBoxVid = New System.Windows.Forms.ListBox()
         Me.ButtonAdd = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -63,7 +63,7 @@ Partial Class Form1
         '
         Me.Panel2.Controls.Add(Me.ButtonSelect)
         Me.Panel2.Controls.Add(Me.ButtonDelete)
-        Me.Panel2.Controls.Add(Me.ListBoxImg)
+        Me.Panel2.Controls.Add(Me.ListBoxVid)
         Me.Panel2.Controls.Add(Me.ButtonAdd)
         Me.Panel2.Location = New System.Drawing.Point(11, 5)
         Me.Panel2.Name = "Panel2"
@@ -105,13 +105,13 @@ Partial Class Form1
         Me.ButtonDelete.Text = "Delete"
         Me.ButtonDelete.UseVisualStyleBackColor = True
         '
-        'ListBoxImg
+        'ListBoxVid
         '
-        Me.ListBoxImg.FormattingEnabled = True
-        Me.ListBoxImg.Location = New System.Drawing.Point(3, 32)
-        Me.ListBoxImg.Name = "ListBoxImg"
-        Me.ListBoxImg.Size = New System.Drawing.Size(314, 95)
-        Me.ListBoxImg.TabIndex = 9
+        Me.ListBoxVid.FormattingEnabled = True
+        Me.ListBoxVid.Location = New System.Drawing.Point(3, 32)
+        Me.ListBoxVid.Name = "ListBoxVid"
+        Me.ListBoxVid.Size = New System.Drawing.Size(314, 95)
+        Me.ListBoxVid.TabIndex = 9
         '
         'ButtonAdd
         '
@@ -143,7 +143,7 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Text = "JWLibrary-VideosAdder"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -154,7 +154,7 @@ Partial Class Form1
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     Friend WithEvents ButtonSelect As System.Windows.Forms.Button
     Friend WithEvents ButtonDelete As System.Windows.Forms.Button
-    Friend WithEvents ListBoxImg As System.Windows.Forms.ListBox
+    Friend WithEvents ListBoxVid As System.Windows.Forms.ListBox
     Friend WithEvents ButtonAdd As System.Windows.Forms.Button
 
 End Class
