@@ -29,12 +29,14 @@ Partial Class Form1
         Me.ButtonDelete = New System.Windows.Forms.Button()
         Me.ListBoxVid = New System.Windows.Forms.ListBox()
         Me.ButtonAdd = New System.Windows.Forms.Button()
+        Me.ButtonRestoreAll = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.ButtonRestoreAll)
         Me.Panel1.Controls.Add(Me.ButtonAdd_Menu)
         Me.Panel1.Location = New System.Drawing.Point(11, 5)
         Me.Panel1.Name = "Panel1"
@@ -52,7 +54,7 @@ Partial Class Form1
         Me.ButtonAdd_Menu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ButtonAdd_Menu.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonAdd_Menu.ForeColor = System.Drawing.Color.Blue
-        Me.ButtonAdd_Menu.Location = New System.Drawing.Point(3, 48)
+        Me.ButtonAdd_Menu.Location = New System.Drawing.Point(3, 42)
         Me.ButtonAdd_Menu.Name = "ButtonAdd_Menu"
         Me.ButtonAdd_Menu.Size = New System.Drawing.Size(312, 61)
         Me.ButtonAdd_Menu.TabIndex = 12
@@ -131,6 +133,23 @@ Partial Class Form1
         Me.ButtonAdd.Text = "→"
         Me.ButtonAdd.UseVisualStyleBackColor = True
         '
+        'ButtonRestoreAll
+        '
+        Me.ButtonRestoreAll.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ButtonRestoreAll.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.ButtonRestoreAll.FlatAppearance.BorderSize = 0
+        Me.ButtonRestoreAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.ButtonRestoreAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
+        Me.ButtonRestoreAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ButtonRestoreAll.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonRestoreAll.ForeColor = System.Drawing.Color.Red
+        Me.ButtonRestoreAll.Location = New System.Drawing.Point(37, 124)
+        Me.ButtonRestoreAll.Name = "ButtonRestoreAll"
+        Me.ButtonRestoreAll.Size = New System.Drawing.Size(240, 31)
+        Me.ButtonRestoreAll.TabIndex = 17
+        Me.ButtonRestoreAll.Text = "Restore original publications"
+        Me.ButtonRestoreAll.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -156,5 +175,5 @@ Partial Class Form1
     Friend WithEvents ButtonDelete As System.Windows.Forms.Button
     Friend WithEvents ListBoxVid As System.Windows.Forms.ListBox
     Friend WithEvents ButtonAdd As System.Windows.Forms.Button
-
+    Friend WithEvents ButtonRestoreAll As Button
 End Class
